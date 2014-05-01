@@ -26,15 +26,15 @@ set -g default-terminal 'screen-256color'
 ```
 
 1. If you are using vim within tmux, you should also set the terminal colors:
-```
+```vim
 set t_Co=256                        " force vim to use 256 colors
 let g:solarized_termcolors=256      " use solarized 256 fallback
 ```
 
 ###Basic TMUX Setup
-```
+```bash
 #TMUX configuration file
-curl --silent -L -o ~/.tmux.conf TMUX_FILE
+curl --silent -L -o ~/.tmux.conf https://raw.githubusercontent.com/usclug/open-mic-spring2014/master/tmux/tmux.conf
 
 #TMUX config & scripts directory
 mkdir -p ~/.tmux.conf.d
